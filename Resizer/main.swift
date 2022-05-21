@@ -109,13 +109,13 @@ func sizeUsingAspectRatio(
     if let width = specifiedSize.width {
         return (
             width: width,
-            height: originalImageSize.height
-                        * (width / originalImageSize.width))
+            height: Int(Double(originalImageSize.height)
+                        * (Double(width) / Double(originalImageSize.width))))
     }
     if let height = specifiedSize.height {
         return (
-            width: originalImageSize.width
-                       * (height / originalImageSize.height),
+            width: Int(Double(originalImageSize.width)
+                       * (Double(height) / Double(originalImageSize.height))),
             height: height)
     }
     fatalError("This point will never be reached")

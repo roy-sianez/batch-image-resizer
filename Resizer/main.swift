@@ -16,15 +16,25 @@ typealias Size = (width: Int?, height: Int?)
 
 let imageAbsoluteFilePaths: [String] = [
     // Add absolute file paths for images.
-    "/Users/roysianez/Desktop/App Icon P3.png"
+    
 ]
 
 let imageSizes: [Size] = [
     // Add sizes. Each image will be resized to all of the included sizes.
     // If the width or height is nil, the missing dimension will be inferred to
     // preserve the aspect ratio of the image.
-    (32, 32),
-    (64, 64),
+    (20, nil),
+    (29, nil),
+    (40, nil),
+    (58, nil),
+    (60, nil),
+    (76, nil),
+    (80, nil),
+    (87, nil),
+    (120, nil),
+    (152, nil),
+    (167, nil),
+    (180, nil),
 ]
 
 func newFileName(from originalFileName: String, with size: Size) -> String {

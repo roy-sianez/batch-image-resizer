@@ -84,7 +84,7 @@ for image in images {
             bitsPerComponent: cgImage.bitsPerComponent,
             bytesPerRow: 0,
             space: cgImage.colorSpace ?? CGColorSpace(name: CGColorSpace.sRGB)!,
-            bitmapInfo: cgImage.bitmapInfo.rawValue)!
+            bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue)!
         context.interpolationQuality = .high
         context.draw(
             cgImage,
